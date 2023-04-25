@@ -1,0 +1,2 @@
+#!/bin/bash
+wakeonlan -p 40001 -f /etc/maclist
