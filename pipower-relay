@@ -1,0 +1,15 @@
+#!/bin/python
+
+import RPi.GPIO as GPIO
+from time import sleep
+
+pin = 17
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(pin, GPIO.OUT, initial=GPIO.LOW)
+GPIO.output(pin, GPIO.HIGH)
+sleep(0.3)
+GPIO.output(pin, GPIO.LOW)
+GPIO.cleanup
