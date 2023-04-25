@@ -1,0 +1,10 @@
+[Unit]
+Description=Listening service for WOL packets
+After=network.target
+
+[Service]
+ExecStart=/bin/pipower-listen
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target
