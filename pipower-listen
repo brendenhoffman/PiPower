@@ -1,0 +1,3 @@
+#!/bin/bash
+
+socat -u udp-l:40000,fork system:pipower-relay
