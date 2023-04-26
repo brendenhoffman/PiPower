@@ -1,5 +1,22 @@
 # PiPower
-Set up a Pi to remotely turn on WoL incapable devices as well as act as a NUT server for graceful shutdowns and restarts
+Set up a Pi to remotely turn on WoL incapable devices.
 
-# Nothing here yet...
-I have this in the works, I will upload the code as I make it and I will make an example schematic for the relay board I made as well.
+# Hardware
+Nothing here yet
+
+# Usage
+These scripts are designed to be flexible. They can be used with any number of other programs.
+* pipower.service: This is a SystemD service file to start the port listening script.
+* pipower-listen: This is the port listening script, it will typically not be used unless you are not using the SystemD service.
+* pipower-relay: This script triggers the relay. It should not be used directly as there is no protection for whether it is triggering the power button on a running maching or not.
+* pipower-check: This is a script that pings given IP addresses to check whether the attached computers are running or not before executing pipower-relay.
+* pipower-send: This is a script to distribute WOL packets to any computer in the MAC list.
+* pipower-all: This one simply executes both pipower-check and pipower-send at the same time.
+
+# Configuration
+The config files are stored in /etc/pipower.
+* iplist: This file is a simple list used by pipower-check to ping attached computers. IPs are separated by a newline.
+* maclist: Pipower-send will use this to distribute WOL packets. MAC addresses are separated by a newline.
+
+# Usage with NUT
+Nothing here yet
