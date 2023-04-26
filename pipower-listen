@@ -1,3 +1,8 @@
 #!/bin/bash
+#This script listens on a port for incoming packets on a port.
+#Caution: assigning a local port frequently used by anything besides WOL will result in the script being run. The pipower-check script is the only thing between this port and the power switch.
+#UDP port 40000 is the default port for pfsense, change this if this is not the port used by your hardware. Hardware which only sends over EtherType 0x0842 will need a different solution to listen for the packet.
+#Again, any traffic sent over this port will attempt to hit the power, WOL or not. Socat can't determine what is a WOL packet and to whom it is addressed. Typical WOL packets are sent to a broadcast address.
 
-socat -u udp-l:40000,fork system:pipower-relay
+port=40000
+socat -u udp-l:$port,fork system:pipower-check
