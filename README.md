@@ -18,7 +18,7 @@ These scripts are designed to be flexible. They can be used with any number of o
 * pipower.service: This is a SystemD service file to start the port listening script.
 * pipower-listen: This is the port listening script, it will typically not be used unless you are not using the SystemD service.
 * pipower-relay: This script triggers the relay. It should not be used directly as there is no protection for whether it is triggering the power button on a running maching or not.
-* pipower-check: This is a script that pings given IP addresses to check whether the attached computers are running or not before executing pipower-relay.
+* pipower-check: This is a script that pings given IP addresses to check whether the attached computers are running or not before executing pipower-relay. If one or more are up the relay will not be triggered, restarting any that are down will require manual intervention.
 * pipower-send: This is a script to distribute WOL packets to any computer in the MAC list.
 * pipower-all: This one simply executes both pipower-check and pipower-send at the same time.
 
