@@ -4,7 +4,7 @@ Set up a Pi to remotely turn on WoL incapable devices.
 # Hardware
 Nothing here yet
 
-#Installation
+# Installation
 The suggested route would be to use the install-pipower script: 
 
 Warning: Only run scripts you trust, especially when they are sent into bash like this
