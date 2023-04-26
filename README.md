@@ -5,11 +5,13 @@ Set up a Pi to remotely turn on WoL incapable devices.
 This is meant to be used with a Raspberry Pi with the GPIO and a relay. See this hardware section for more info on relays.
 
 # Installation
-The suggested route would be to use the install-pipower script: 
+The suggested route would be to use the install-pipower script as root: 
 
 Warning: Only run scripts you trust, especially when they are sent into bash like this
 
 `bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
+
+If you would like to make configuration changes, it can be done easily by making them in the PiPower git directory and running `# install-pipower c`
 
 # Usage
 These scripts are designed to be flexible. They can be used with any number of other programs. They are stored in /bin
