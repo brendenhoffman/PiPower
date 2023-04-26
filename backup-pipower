@@ -1,0 +1,4 @@
+#Back up your pipower config files
+backup_dir=~/backup
+
+cp /etc/pipower/* $backup_dir
