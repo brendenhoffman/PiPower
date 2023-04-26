@@ -9,7 +9,7 @@ The suggested route would be to use the install-pipower script as root:
 
 Warning: Only run scripts you trust, especially when they are sent into bash like this
 
-`bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
+`# bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
 
 If you would like to make configuration changes, it can be done easily by making them in the PiPower git directory and running `# install-pipower c`
 
