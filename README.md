@@ -8,6 +8,7 @@ Nothing here yet
 The suggested route would be to use the install-pipower script: 
 
 Warning: Only run scripts you trust, especially when they are sent into bash like this
+
 `bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
 
 # Usage
