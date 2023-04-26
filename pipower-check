@@ -1,5 +1,6 @@
 #!/bin/bash
 #The goal of this script is to check if any of the computers attatched to the relay are up. This is only expected in cases such as when a shutdown signal has been recieved and then a WOL packet immediately sent. The relay will not be triggered until all computers are down.
+#If one or more are up the relay will not be triggered, restarting any that are down will require manual intervention.
 
 ip_list="/etc/pipower/iplist"
 up=0
