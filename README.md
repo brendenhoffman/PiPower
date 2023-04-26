@@ -4,8 +4,14 @@ Set up a Pi to remotely turn on WoL incapable devices.
 # Hardware
 Nothing here yet
 
+#Installation
+The suggested route would be to use the install-pipower script: 
+
+Warning: Only run scripts you trust, especially when they are sent into bash like this
+`bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
+
 # Usage
-These scripts are designed to be flexible. They can be used with any number of other programs.
+These scripts are designed to be flexible. They can be used with any number of other programs. They are stored in /bin
 * pipower.service: This is a SystemD service file to start the port listening script.
 * pipower-listen: This is the port listening script, it will typically not be used unless you are not using the SystemD service.
 * pipower-relay: This script triggers the relay. It should not be used directly as there is no protection for whether it is triggering the power button on a running maching or not.
