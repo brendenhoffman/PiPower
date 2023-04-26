@@ -2,7 +2,7 @@
 Set up a Pi to remotely turn on WoL incapable devices.
 
 # Hardware
-Nothing here yet
+This is meant to be used with a Raspberry Pi with the GPIO and a relay. See this hardware section for more info on relays.
 
 # Installation
 The suggested route would be to use the install-pipower script: 
