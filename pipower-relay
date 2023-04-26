@@ -3,6 +3,7 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
+#Choose the pin you would like to toggle the relay (default: pin 17 BCM)
 pin = 17
 
 GPIO.setmode(GPIO.BCM)
