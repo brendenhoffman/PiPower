@@ -1,3 +1,5 @@
 #!/bin/bash
+#This script is used to power on any computer you have listed in /etc/pipower/maclist, and anything connected to the relay.
+
 pipower-send
-pipower-relay
+pipower-check
