@@ -1,6 +1,7 @@
 #!/bin bash
 
-apt install -y socat wakeonlan nut git
+apt install -y socat wakeonlan nut git python3-rpi.gpio
+echo "Ensure that GPIO is enable in raspi-config"
 
 git clone https://github.com/brendenhoffman/PiPower.git
 cp -r PiPower/pipower /etc/pipower
