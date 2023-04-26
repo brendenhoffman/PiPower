@@ -11,7 +11,7 @@ Warning: Only run scripts you trust, especially when they are sent into bash lik
 
 `# bash <(curl -s https://github.com/brendenhoffman/PiPower/master/install-pipower )`
 
-If you would like to make configuration changes, it can be done easily by making them in the PiPower git directory and running `# install-pipower c`
+If you would like to make configuration changes, it can be done easily by making them in the PiPower git directory and running `# ./install-pipower c`
 
 # Usage
 These scripts are designed to be flexible. They can be used with any number of other programs. They are stored in /bin
