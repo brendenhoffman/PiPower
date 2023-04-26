@@ -1,2 +1,3 @@
 #!/bin/bash
-wakeonlan -p 40001 -f /etc/maclist
+#This script reads the maclist and sends a packet to each computer. The port is 40001 to not trigger pipower-listen, can be changed, but suggested to be anything but the listening port.
+wakeonlan -p 40001 -f /etc/pipower/maclist
