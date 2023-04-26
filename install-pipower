@@ -3,9 +3,10 @@
 apt install -y socat wakeonlan nut git
 
 git clone https://github.com/brendenhoffman/PiPower.git
-mv PiPower/maclist /etc/maclist
-mv PiPower/pipower.service /etc/systemd/system/pipower.service
-chmod +x PiPower/*
-mv PiPower/pipower* /bin/
+cp -r PiPower/pipower /etc/pipower
+cp PiPower/pipower.service /etc/systemd/system/pipower.service
+chmod +x PiPower/pipower-*
+cp PiPower/pipower-* /bin/
 
 systemctl start pipower
+systemctl enable pipower
